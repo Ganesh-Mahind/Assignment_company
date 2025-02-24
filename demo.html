@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Care Landing Page</title>
+  <link rel="stylesheet" href="nom.css"/>
+</head>
+<body>
+
+  <!-- HERO HEADER (Red Wave) -->
+  <header class="hero-header">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/dlogo.jpg" alt="Pet Care Logo">
+      </div>
+      
+      <!-- ICON for mobile -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Franchise with Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+      <h1>We Get Pet Care!</h1>
+      <p>For over 17 years, Fetch! Pet Care has been a trusted partner in keeping pets healthy and happy!</p>
+      <a href="#" class="btn-schedule">Schedule Service</a>
+      <p class="hero-phone">Or call 866.383.2463</p>
+    </div>
+
+    <!-- DOG IMAGE -->
+    <div class="dog-container">
+      <img src="assets/dog.png" alt="Golden Retriever" />
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    
+    <section class="services-section">
+      <div class="services-container">
+        <!-- LEFT SIDE -->
+        <div class="services-left">
+          <h2>Our Services</h2>
+          <p class="subtitle">
+            National Brand With a Local Feel. Experience the Fetch! Difference
+          </p>
+          <p class="desc">Enter Your Location and Fetch Our Services</p>
+          <div class="zip-container">
+            <input type="text" placeholder="Zip Code" />
+            <button>→</button>
+          </div>
+        </div>
+        <!-- RIGHT SIDE: 4 boxes -->
+        <div class="services-right">
+          <div class="service-box">
+            <img src="assets/dog.svg" alt="Dog Walking" />
+            <p>Dog Walking</p>
+          </div>
+          <div class="service-box">
+            <img src="assets/Group 63.svg" alt="Pet Sitting" />
+            <p>Pet Sitting</p>
+          </div>
+          <div class="service-box">
+            <img src="assets/pet-house.svg" alt="Overnight Care" />
+            <p>Overnight Care</p>
+          </div>
+          <div class="service-box">
+            <img src="assets/Group 64.svg" alt="Other Services" />
+            <p>Other Services</p>
+          </div>
+        </div>
+      </div>
+      <!-- Wave wrapper for services section -->
+      <div class="wave-wrapper">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="#4487FF" d="M0,64L48,64C96,64,192,64,288,96L432,128L576,160L720,192L864,160L1008,128L1152,96L1296,64L1440,32L1440,320L1296,320L1152,320L1008,320L864,320L720,320L576,320L432,320L288,320L144,320L0,320Z"></path>
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="footer-section">
+   
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
